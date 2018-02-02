@@ -16,7 +16,7 @@
     <a-entity obj-model="obj: #billiards-obj; mtl: #billiards-mtl" position="-8 1 6" rotation="0 90 0"></a-entity>
     <a-entity obj-model="obj: #pTable-obj; mtl: #pTable-mtl" scale = "0.5 0.5 0.5" position="3 0.6 10" rotation="0 0 0"></a-entity>
     <!-- Grass -->
-    <a-entity id="floor" geometry="height:0;depth:24;width:24"
+    <a-entity id="floor" geometry="height:0.2;depth:24;width:24"
               material="src:url(images/grasslight-big.jpg);color:#fafafa;metalness:0.1;repeat:50 20;roughness:1">
     </a-entity>
     <!-- Environment: Forest -->
@@ -32,10 +32,9 @@
     <!-- Sky -->
     <a-sky radius="200" geometry="" theta-length="110" material="sunPosition:-0.756 0.555 -0.347;shader:skyshader;npot:false"></a-sky>
     <!-- Camera -->
-
     <a-entity id="cameraWrapper" position="-0.237 1.469 11.354">
-        <a-entity camera universal-controls>
-        <!a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
+        <!a-entity camera universal-controls>
+        <a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
             <a-entity id="cursor" position="0 0 -2" geometry="primitive:ring;radiusOuter:0.016;radiusInner:0.01"
                       material="color:#ff9;shader:flat;transparent:true;opacity:0.5" scale="2 2 2" raycaster=""></a-entity>
         </a-entity>
