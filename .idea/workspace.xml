@@ -2,39 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41ee0199-1e0e-4c86-b567-5b0db01bc24b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/assets/AngryBirdsRedsMask.mtl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/AngryBirdsRedsMask.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Angrybirdsredmask1Tex.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/Boden_baseColor.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/body_AO.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/body_albedo2048.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/body_emissive.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/body_metalgloss2048_converted_metalRoughness.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/body_normal.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/concrete_044_metalGloss_converted_metalRoughness.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/concrete_044_normal1024.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/leg_AO.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/leg_albedo.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/leg_metalgloss_converted_metalRoughness.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Assets/Models/PBR/BusterDrone/Materials/leg_normal1024.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Bigmax_White_OBJ.mtl" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Bigmax_White_OBJ.obj" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/DUCK.MTL" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/DUCK.OBJ" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/EyesWhite.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/EyesWhiteDark.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/LICENSE.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Patrick.dae" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Stormtrooper_D.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Textures/Color.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Textures/Flowers.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/Textures/Skin_Patrick.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/busterDrone.bin" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/busterDrone.gltf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/horned_owl.wav" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/DUCK.TIF" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/stormtrooper.dae" afterPath="" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -52,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+            <state relative-caret-position="187">
+              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -183,12 +150,12 @@
       <workItem from="1517521145014" duration="81000" />
       <workItem from="1517521264040" duration="3531000" />
       <workItem from="1517528591710" duration="3160000" />
-      <workItem from="1517535127745" duration="5662000" />
+      <workItem from="1517535127745" duration="6869000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28814000" />
+    <option name="totallyTimeSpent" value="30021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
@@ -437,8 +404,8 @@
     <entry file="file://$PROJECT_DIR$/test2.html" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        <state relative-caret-position="187">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
           <folding />
         </state>
       </provider>
