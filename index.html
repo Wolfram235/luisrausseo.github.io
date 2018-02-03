@@ -11,13 +11,22 @@
         <a-asset-item id="billiards-mtl" src="assets/models/billiard_table.mtl"></a-asset-item>
         <a-asset-item id="pTable-obj" src="assets/models/pTable.obj"></a-asset-item>
         <a-asset-item id="pTable-mtl" src="assets/models/pTable.mtl"></a-asset-item>
+        <a-asset-item id="car-obj" src="assets/models/car.obj"></a-asset-item>
+        <a-asset-item id="car-mtl" src="assets/models/car.mtl"></a-asset-item>
+        <a-asset-item id="Kitchen-obj" src="assets/models/Kitchen.obj"></a-asset-item>
+        <a-asset-item id="Kitchen-mtl" src="assets/models/Kitchen.mtl"></a-asset-item>
     </a-assets>
     <!-- Models -->
-    <a-entity obj-model="obj: #billiards-obj; mtl: #billiards-mtl" position="-8 1 6" rotation="0 90 0"></a-entity>
+    <a-entity obj-model="obj: #billiards-obj; mtl: #billiards-mtl" position="-10 1 6.5" rotation="0 90 0"></a-entity>
     <a-entity obj-model="obj: #pTable-obj; mtl: #pTable-mtl" scale = "0.5 0.5 0.5" position="3 0.6 10" rotation="0 0 0"></a-entity>
+    <a-entity obj-model="obj: #car-obj; mtl: #car-mtl" scale = "7 7 7" position="0.8 0.76 4" rotation="4 66 -0"></a-entity>
+    <a-entity obj-model="obj: #Kitchen-obj; mtl: #Kitchen-mtl" scale = "0.8 0.8 0.8" position="-9.6 1.8 0" rotation="0 -90 0"></a-entity>
     <!-- Grass -->
     <a-entity id="floor" geometry="height:0.2;depth:24;width:24" position="-2 0 0"
               material="src:url(images/grasslight-big.jpg);color:#fafafa;metalness:0.1;repeat:50 20;roughness:1">
+    <!-- Garage Floor -->
+    <a-entity id="garage_floor" geometry="height:0.4;depth:7;width:7" position="2 0 4"
+              material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 3;roughness:1">
     </a-entity>
     <!-- Environment: Forest -->
     <a-entity environment="active: true; seed: 1; skyType: atmosphere;
