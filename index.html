@@ -1,169 +1,202 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v1.14.0/dist/aframe-extras.min.js"></script>
-    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
-</head>
-<body>
-<a-scene>
-    <a-assets>
-        <a-asset-item id="billiards-obj" src="assets/models/billiard_table.obj"></a-asset-item>
-        <a-asset-item id="billiards-mtl" src="assets/models/billiard_table.mtl"></a-asset-item>
-        <a-asset-item id="pTable-obj" src="assets/models/pTable.obj"></a-asset-item>
-        <a-asset-item id="pTable-mtl" src="assets/models/pTable.mtl"></a-asset-item>
-        <a-asset-item id="car-obj" src="assets/models/car.obj"></a-asset-item>
-        <a-asset-item id="car-mtl" src="assets/models/car.mtl"></a-asset-item>
-        <a-asset-item id="Kitchen-obj" src="assets/models/Kitchen.obj"></a-asset-item>
-        <a-asset-item id="Kitchen-mtl" src="assets/models/Kitchen.mtl"></a-asset-item>
-        <a-asset-item id="shower-obj" src="assets/models/shower.obj"></a-asset-item>
-        <a-asset-item id="shower-mtl" src="assets/models/shower.mtl"></a-asset-item>
-        <a-asset-item id="door-obj" src="assets/models/door.obj"></a-asset-item>
-        <a-asset-item id="door-mtl" src="assets/models/door.mtl"></a-asset-item>
-    </a-assets>
-    <!-- Models -->
-    <a-entity obj-model="obj: #billiards-obj; mtl: #billiards-mtl" position="-8 1 6.5" rotation="0 90 0"></a-entity>
-    <a-entity obj-model="obj: #pTable-obj; mtl: #pTable-mtl" scale = "0.5 0.5 0.5" position="9 0.6 10" rotation="0 0 0"></a-entity>
-    <a-entity obj-model="obj: #car-obj; mtl: #car-mtl" scale = "7 7 7" position="2.2 0.76 4" rotation="4 66 0"></a-entity>
-    <a-entity obj-model="obj: #Kitchen-obj; mtl: #Kitchen-mtl" scale = "0.6 0.6 0.6" position="-9.9 1.3 -6.85" rotation="0 -90 0"></a-entity>
-    <a-entity obj-model="obj: #shower-obj; mtl: #shower-mtl" scale = "1 1 1" position="4.9 1.2 -6.5" rotation="0 0 0"></a-entity>
-    <a-entity obj-model="obj: #door-obj; mtl: #door-mtl" scale = "1.7 2.2 1.5" position="-1.4 1.6 2.5" rotation="0 90 0"></a-entity>
-    <!-- Grass -->
-    <a-entity id="floor" geometry="height:0.2;depth:24;width:28" position="-1 0 0"
-              material="src:url(images/grasslight-big.jpg);color:#fafafa;metalness:0.1;repeat:50 20;roughness:1">
-    </a-entity>
-    <!-- Garage Floor -->
-    <a-entity geometry="height:0.4;depth:6.3;width:7" position="2 0 3.8"
-              material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 3;roughness:1">
-    </a-entity>
-    <a-entity geometry="height:0.4;depth:5;width:4" position="2 0 9.45"
-              material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 2;roughness:1">
-    </a-entity>
-    <!-- Environment: Forest -->
-    <a-entity environment="active: true; seed: 1; skyType: atmosphere;
-                           lighting: none; lightPosition: -1.2 0.88 -0.55; fog: 0.1;
-                           ground: noise; groundYScale: 4.18;
-                           groundTexture: squares; groundColor: #937a24; groundColor2: #987d2e;
-                           dressing: trees; dressingAmount: 200; dressingColor: #888b1d; dressingScale: 5; dressingVariance: [object Object];
-                           gridColor: #c5a543;
-                           preset: forest">
-        <a-entity position="9.698 7.19 19.878" light="intensity:0.477;angle:62.14;shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10" rotation="-0.17188733853924698 43.37290509140332 167.3036761782004"></a-entity>
-    </a-entity>
-    <!-- Sky -->
-    <a-sky radius="200" geometry="" theta-length="110" material="sunPosition:-0.756 0.555 -0.347;shader:skyshader;npot:false"></a-sky>
-    <!-- Camera -->
-    <a-entity id="cameraWrapper" position="-0.237 1.469 11.354">
-        <!a-entity camera universal-controls>
-        <a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
-            <a-entity id="cursor" position="0 0 -2" geometry="primitive:ring;radiusOuter:0.016;radiusInner:0.01"
-                      material="color:#ff9;shader:flat;transparent:true;opacity:0.5" scale="2 2 2" raycaster=""></a-entity>
-        </a-entity>
+<title>Luis Rausseo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-    </a-entity>
-    <!-- Walls (Front)-->
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 0.8; width: 5"
-              position="-8 0.4 9" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 4 1">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 2.5; width: 2"
-              position="-6.5 2 9" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 0.5; width: 5"
-              position="-8 3.5 9" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 4 1">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 2"
-              position="-5.4 1.87 8.1" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 0.8; width: 3"
-              position="-10.4 0.4 7.4" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 3">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 1"
-              position="-5 1.87 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.3; width: 1.9"
-              position="-10.4 1.6 4.95" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 0.5; width: 5"
-              position="-10.4 3.5 6.5" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 2.5; width: 0.2"
-              position="-10.4 2 9" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 1"
-              position="-2 1.87 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 1; width: 2"
-              position="-3.5 3.25 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 2.8; width: 2"
-              position="-3.5 1.35 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
 
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="assets/photo.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-topleft w3-container w3-text-white">
+            <h2 color=white>Luis Rausseo</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Programmer, IT Support</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>Lubbock, TX</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>luis.rausseo@ttu.edu</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-deep-purple"></i>(786) 916-7070</p>
+          <hr>
 
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 6"
-              position="5.6 1.875 4.1" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 12"
-              position="-10.4 1.875 -2" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-deep-purple"></i>Skills</b></p>
+		  <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:99%">95%</div>
+          </div>
+          <p>MATLAB</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:80%">80%</div>
+          </div>
+          <p>C</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:85%">
+              <div class="w3-center w3-text-white">85%</div>
+            </div>
+          </div>
+          <p>Visual Basic / VBA</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:75%">75%</div>
+          </div>
+          <p>HTML / CSS</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-deep-purple" style="width:70%">70%</div>
+          </div>
+          <br>
 
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 16"
-              position="-2.5 1.875 -8.1" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 9.5"
-              position="5.6 1.875 -3.5" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 3.5"
-              position="-1.5 1.875 5.15" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-deep-purple"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-deep-purple" style="height:24px;width:95%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-deep-purple" style="height:24px;width:100%"></div>
+          </div>
+          <br>
+        </div>
+	  </div><br>
+	  
+	  <div class="w3-container w3-card w3-white w3-margin-bottom">
+		<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-file-text-o fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Projects</h2>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>CS 4331 - Project 1</b></h5>
+		  <p><strong>Texas Tech University</strong></p>
+		  <p>Virtual reality project using a-frame, HTML and Javascript</p>
+		  <a href="Project_1/index.html">Link</a>
+          <hr>
+        </div>
+	  </div>
+	  
 
-    <!-- Garage -->
-    <!-- Front -->
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 1.5"
-              position="-0.75 1.875 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 1">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 1; width: 4"
-              position="2 3.25 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth:0.2; height: 3.75; width: 1.5"
-              position="4.75 1.875 7" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 1.5"
-              position="-1.5 1.875 1.2" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 1">
-    </a-entity>
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 1; width: 1.5"
-              position="-1.5 3.25 2.65" rotation="0 90 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-    <!-- Back -->
-    <a-entity static-body geometry="primitive: box; depth:0.2; height: 3.75; width: 6.9"
-              position="2.05 1.875 0.55" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-    <!-- Dummy Wall-->
-    <a-entity static-body geometry="primitive: box; depth: 0.5; height: 3; width: 2"
-              position="-30 20 30" rotation="0 0 0" material="shader: standard;
-              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
-    </a-entity>
-</a-scene>
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Student Technician / Quality Lead</b></h5>
+		  <p><strong>IT Help Central at Texas Tech University - Lubbock, TX</strong></p>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>April 2017 - <span class="w3-tag w3-deep-purple w3-round">Current</span></h6>
+		  <ul>
+			<li>Front line IT support of TTU's students, staff and faculty.</li>
+			<li>Provide upper-level support for Issues and assign Issues to appropriate Tier II support groups.</li>
+			<li>Provide support to Student Analysts, lobby area, and “Walk-Up Support Services”.</li>
+			<li>Process surveys, quality flags, random evaluations and coach other peers’ regarding their performance.</li>
+			<li>Analysis of Twitter feed with Hootesuite.</li>
+			<li>Develop, improve and implement tools/apps to improve productivity with HTML, Javascript and VBA.</li>
+		  </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>International Student Services Clerk</b></h5>
+		  <p><strong>Miami Dade College - Miami, FL</strong></p>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 201 - April 2016</h6>
+		  <ul>
+			<li>Responsible for International Students Admissions in North Campus.</li>
+			<li>Input data directly from students or from completed registration forms.</li>
+			<li>Provide information regarding immigration, tuition and study programs to students abroad and in person.</li>
+			<li>Refer admissions/registration problems to proper staff or assistance.</li>
+			<li>Develop of internal file's management system in VBA.</li>
+		  </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Warehouse Management System Developer</b></h5>
+		  <p><strong>Cromaflex de Venezuela - Maracay, Venezuela</strong></p>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>January 2013 - July 2013</h6>
+          <ul>
+			<li>Categorization and creation of sorting procedure of the company’s negatives and print samples inventory.</li>
+			<li>Develop of inventory management software using VBA.</li>
+		  </ul>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Intern - Quality Control Analyst</b></h5>
+          <p><strong>POLIVENSA S.A - La Victoria, Venezuela</strong></p>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2012 - December 2012</h6>
+          <ul>
+			<li>Analysis of quality control procedures on semi-processed and processed products in the facility.</li>
+			<li>Supervise production directly and interact with machine' operators to maintain the quality of products.</li>
+			<li>Proposal in matters of industrial security and hygienic quality of the installations and manufacturing processes according the Rules of Safe Manufacturing Practices to achieve food grade products.</li>
+		  </ul>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-deep-purple"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Texas Tech University</b></h5>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - Present</h6>
+		  <p><strong>B.S. Computer Science</strong></p>
+		  <ul>
+			<li>Minor in Mathematics.</li>
+			<li>President's List: Fall 2016</li>
+			<li>Dean's List: Fall 2017</li>
+			<li>Active member of Rawls Information Security Association</li>
+		  </ul>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Miami Dade College</b></h5>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2016</h6>
+		  <p><strong>Engineering - Mechanical (A.A. Pathway)</strong></p>
+		  <ul>
+			<li>Dean's List: Fall 2014, Spring 2015, Fall 2015</li>
+			<li>Member of Phi Theta Kappa.</li>
+			<li>Graduated with Highest Honors.</li>
+			<li>GPA: 3.74</li>
+			<li>Awarded with The President's Volunteer Service (Bronze) in 2016.</li>
+		  </ul>
+          <hr>
+        </div>
+		<div class="w3-container">
+          <h5 class="w3-opacity"><b>Universidad Simón Bolívar</b></h5>
+          <h6 class="w3-text-deep-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006 - 2013</h6>
+		  <p><strong>B.S. Chemical Engineering</strong></p>
+		  <ul>
+			<li>Coodinator of GEUSB journalism student association.</li>
+			<li>Capstone: Construction of a Car's Cooling-system Test Bench.</li>
+		  </ul>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-deep-purple w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
 </body>
 </html>
