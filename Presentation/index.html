@@ -61,15 +61,15 @@
 				<!--Slide 5-->
 				<section>
 					<h3>Who uses LABSTER?</h3>
-					<img class="fragment" src="assets/logos.png" alt="Logos"></img>
+					<img src="assets/logos.png" alt="Logos" width="800" height="550"></img>
 				</section>
 				
 				<!--Slide 6-->
 				<section>
-					<h3>Pros and Cons</h3>
-					<ul><h3>Pros:</h3>
+					<h3>Benefits</h3>
+					<ul>
 						<li>It allows to perform experiments without the risks.</li>
-						<li>Enables universities to save money by not using rectives or disposal methods.</li>
+						<li>Enables universities to save money by not using reactives or disposal methods.</li>
 						<li>Has LMS integration (i.e. Blackboard)</li>
 						<li>Can be used in computers, smartphones with or without a VR headset.</li>
 					</ul>
@@ -77,31 +77,38 @@
 				
 				<!--Slide 7-->
 				<section>
-					<h3>Pros and Cons</h2>
-					<ul><h3>Cons:</h3>
+					<h3>Weaknesses</h3>
+					<ul>
 						<li>Limited to what programmers set up as the experiment's outcome.</li>
 						<li>No haptic feedback.</li>
 					</ul>
-					<img class="fragment" src="assets/glove_one.jpg" alt="Glove One" width="200" height="128"></img>
+					<img class="fragment" src="assets/glove_one.jpg" alt="Glove One" width="266" height="200"></img>
 				</section>
 				
 				<!--Slide 8-->
 				<section>
-					<h3>Simulator Sickness</h3>
-						<div class="w3-dark-grey w3-center w3-round-xlarge">
-						<div class="w3-container w3-light-grey w3-round-xlarge" style="height:24px;width:10%"></div>
-						</div>
-						<h4><center>1/10</center></h4>
+					<h3>Pricing</h3>
+					<img src="assets/pricing.png" alt="Pricing"></img>
 				</section>
 				
 				<!--Slide 9-->
+				<section data-state="somestate">
+					<h3>Simulator Sickness</h3>
+						<div class="w3-dark-grey w3-center w3-round-xlarge">
+							<div id="load_bar" class="w3-container w3-light-grey w3-round-xlarge" style="height:24px;width:0%"></div>
+						</div>
+						<p></p>
+						<h4 id="score"><center>0/10</center></h4>
+				</section>
+				
+				<!--Slide 10-->
 				<section>
 					<h3>Similar Applications</h3>
-					<ul>
-						<li>HoloDeck</li>
-						<li>ENGAGE</li>
-						<li>OSSO VR</li>
-					</ul>
+					<p></p>
+					<img src="assets/OSSO.png" alt="OSSO" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+					<img src="assets/holodeck.jpg" alt="NVIDIA HoloDeck" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+					<img src="assets/ENGAGE.jpg" alt="ENGAGE" style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;">
+					<p style="clear: both;">
 				</section>
 				
 				<!--Slide 10-->
@@ -127,7 +134,28 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
+		<script type="text/javascript">
+			//Animates the load bar when the slide gets active. 
+			Reveal.addEventListener( 'somestate', function() {
+				var elem = document.getElementById("load_bar");
+				var score = document.getElementById("score");
+				var width = 1;
+				var id = setInterval(frame, 60);
+				var count = 0;
+				function frame() {
+					if (width >= 20) {
+						clearInterval(id);
+					} else {
+						width++; 
+						elem.style.width = width + '%'; 
+						if (width%10 == 0){
+							count++;
+							score.innerHTML = count + "/10";
+						}
+					}
+				}
+			}, false );
+		</script>
 		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
