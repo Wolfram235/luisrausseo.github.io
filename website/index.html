@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CRoboto+Condensed%3A300%2C300italic%2Cregular%2Citalic%2C700%2C700italic%7COpen+Sans%3A300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&subset=cyrillic,greek,vietnamese,latin,greek-ext,latin-ext,cyrillic-ext" /><link rel="stylesheet" href="https://www.labster.com/wp-content/cache/min/1/5200a3e175aba82f3545968ae658bb54.css" data-minify="1" /><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge"><style>.async-hide{opacity:0!important}</style>
+<link rel='stylesheet' id='child-style-css'  href='https://www.labster.com/wp-content/themes/Labster/style.css' type='text/css' media='all' /><link rel='stylesheet' id='divi-style-css'  href='https://www.labster.com/wp-content/cache/busting/1/wp-content/themes/Labster/style-3.0.101.css' type='text/css' media='all' /><link rel='stylesheet' id='stripe-checkout-button-css'  href='https://checkout.stripe.com/v3/checkout/button.css?ver=2.5.8' type='text/css' media='all' /> <script type='text/javascript' src='https://www.labster.com/wp-content/cache/busting/1/wp-includes/js/jquery/jquery-1.12.4.js'></script> <script type='text/javascript' src='https://www.labster.com/wp-content/cache/busting/1/wp-includes/js/jquery/jquery-migrate.min-1.4.1.js'></script> 
 <style>
 	body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
 	body {font-size:16px;}
@@ -17,15 +19,14 @@
 <nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-		<img src="assets/logo.png" style="width:40%" alt="Logo" align="left">
-		<p><h4><b>Luis<br>Rausseo</b></h4></p>
+		<img src="assets/Labster_logo.png" style="width:100%" alt="Labster" align="middle">
   </div>
   <br>
   <br>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What is LABSTER?</a> 
     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
     <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
@@ -35,7 +36,7 @@
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Company Name</span>
+  <span>Lasbter</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -46,7 +47,9 @@
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+    <h1 class="w3-jumbo"><b>Labster</b></h1>
+	<h2>Laboratory Simulations for Educators to Empower their STEM Students</p>
+	<br>
     <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
@@ -54,15 +57,11 @@
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
-      <img src="/w3images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
-      <img src="/w3images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="/w3images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+      <img src="assets/labster_lab.jpg" style="width:100%" onclick="onClick(this)" alt="Labster Lab 1">
     </div>
 
     <div class="w3-half">
-      <img src="/w3images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="/w3images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="/w3images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+		<img src="assets/labster_lab2.jpg" style="width:100%" onclick="onClick(this)" alt="Labster Lab 2">
     </div>
   </div>
 
@@ -75,20 +74,52 @@
     </div>
   </div>
 
-  <!-- Services -->
+  <!-- What is LABSTER? -->
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>What is LABSTER?</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>LABSTER is a simulation platform that allow students to perform scientific experiments using a browser or a VR headset.</p>
+    <p>Students can now perform advanced experiments to achieve core science learning outcomes outlined within their classes. They can explore 
+	   many different science topics at their own pace and level of difficulty.
     </p>
+	<!-- Simulation Catalog -->
+	<div class="et_pb_section et_pb_section_4 et_pb_with_background et_pb_inner_shadow et_section_regular">
+		<div class=" et_pb_row et_pb_row_12">
+			<div class="et_pb_column et_pb_column_4_4  et_pb_column_26 et_pb_css_mix_blend_mode_passthrough et-last-child">
+				<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_text_3">
+					<div class="et_pb_text_inner">
+						<h2 style="font-size: 2.2em;">Simulation Catalog</h2>
+					</div>
+				</div>
+			<div class="et_pb_code et_pb_module md-random-simulations et_pb_code_1">
+				<div class="et_pb_code_inner">
+					<div id="md-simulation-overview">
+						<a href="https://www.labster.com/simulations/embryology/ ">
+							<div class="md-simulation-card">
+								<div class="md-first-image">
+									<div class="md-image-overlay"> 
+										<img src=" https://www.labster.com/wp-content/uploads/2017/04/Capture1-159x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/04/Capture1-159x90.jpg" alt="Embryology " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/04/Capture1-159x90.jpg" alt="Embryology " /&gt;</noscript>
+									</div>
+								<div class="md-simulation-title">Embryology</div>
+							</div>
+						</div> 
+						</a>
+						<a href="https://www.labster.com/simulations/nuclear-magnetic-resonance/ ">
+							<div class="md-simulation-card">
+								<div class="md-first-image">
+									<div class="md-image-overlay"> 
+									<img src=" https://www.labster.com/wp-content/uploads/2016/10/NMR-1-1-169x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/10/NMR-1-1-169x90.jpg" alt="Nuclear Magnetic Resonance " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/10/NMR-1-1-169x90.jpg" alt="Nuclear Magnetic Resonance " /&gt;</noscript>
+								</div>
+								<div class="md-simulation-title">Nuclear Magnetic Resonance</div>
+							</div>
+						</div> 
+						</a>
+						<a href="https://www.labster.com/simulations/gene-expression/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/02/gene_expression_lab_small-157x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/02/gene_expression_lab_small-157x90.jpg" alt="Gene Expression " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/02/gene_expression_lab_small-157x90.jpg" alt="Gene Expression " /&gt;</noscript></div><div class="md-simulation-title">Gene Expression</div></div></div> </a><a href="https://www.labster.com/simulations/microscopy/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/Chickenfeeding_intro-133x90.jpeg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/Chickenfeeding_intro-133x90.jpeg" alt="Microscopy " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/Chickenfeeding_intro-133x90.jpeg" alt="Microscopy " /&gt;</noscript></div><div class="md-simulation-title">Microscopy</div></div></div> </a><a href="https://www.labster.com/simulations/hplc/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/HPLC-1-1-139x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/HPLC-1-1-139x90.jpg" alt="HPLC " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/HPLC-1-1-139x90.jpg" alt="HPLC " /&gt;</noscript></div><div class="md-simulation-title">HPLC</div></div></div> </a><a href="https://www.labster.com/simulations/regeneration-biology/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/04/Capture1-RBL-160x90.png" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/04/Capture1-RBL-160x90.png" alt="Regeneration Biology " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/04/Capture1-RBL-160x90.png" alt="Regeneration Biology " /&gt;</noscript></div><div class="md-simulation-title">Regeneration Biology</div></div></div> </a><a href="https://www.labster.com/simulations/monogenetic-disorders/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/08/Monogenetic-Disorders-4-1-160x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/08/Monogenetic-Disorders-4-1-160x90.jpg" alt="Monogenic Disorders " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/08/Monogenetic-Disorders-4-1-160x90.jpg" alt="Monogenic Disorders " /&gt;</noscript></div><div class="md-simulation-title">Monogenic Disorders</div></div></div> </a><a href="https://www.labster.com/simulations/lab-safety/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/07/Lab-Safety-4-1-160x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/07/Lab-Safety-4-1-160x90.jpg" alt="Lab Safety " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/07/Lab-Safety-4-1-160x90.jpg" alt="Lab Safety " /&gt;</noscript></div><div class="md-simulation-title">Lab Safety</div></div></div> </a><a href="https://www.labster.com/simulations/acids-and-bases/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/10/Capture-1-1-160x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/10/Capture-1-1-160x90.jpg" alt="Acids and Bases " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/10/Capture-1-1-160x90.jpg" alt="Acids and Bases " /&gt;</noscript></div><div class="md-simulation-title">Acids and Bases</div></div></div> </a><a href="https://www.labster.com/simulations/hematology/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/03/Hematology_4-160x90.png" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/03/Hematology_4-160x90.png" alt="Hematology " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/03/Hematology_4-160x90.png" alt="Hematology " /&gt;</noscript></div><div class="md-simulation-title">Hematology</div></div></div> </a><a href="https://www.labster.com/simulations/mendelian-inheritance/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/05/Screen-Shot-2016-04-29-at-15.42.54-1-165x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/05/Screen-Shot-2016-04-29-at-15.42.54-1-165x90.jpg" alt="Mendelian Inheritance " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/05/Screen-Shot-2016-04-29-at-15.42.54-1-165x90.jpg" alt="Mendelian Inheritance " /&gt;</noscript></div><div class="md-simulation-title">Mendelian Inheritance</div></div></div> </a><a href="https://www.labster.com/simulations/advanced-acids-and-bases/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/08/2017-06-16_15-16-57-160x90.png" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/08/2017-06-16_15-16-57-160x90.png" alt="Advanced Acids and Bases " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/08/2017-06-16_15-16-57-160x90.png" alt="Advanced Acids and Bases " /&gt;</noscript></div><div class="md-simulation-title">Advanced Acids and Bases</div></div></div> </a><a href="https://www.labster.com/simulations/cellular-respiration/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.16.18-1-150x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.16.18-1-150x90.jpg" alt="Cellular Respiration " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.16.18-1-150x90.jpg" alt="Cellular Respiration " /&gt;</noscript></div><div class="md-simulation-title">Cellular Respiration</div></div></div> </a><a href="https://www.labster.com/simulations/protein-denaturation/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/02/PRD_screenshot1-160x90.png" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/02/PRD_screenshot1-160x90.png" alt="Protein Denaturation " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/02/PRD_screenshot1-160x90.png" alt="Protein Denaturation " /&gt;</noscript></div><div class="md-simulation-title">Protein Denaturation</div></div></div> </a><a href="https://www.labster.com/simulations/introduction-to-food-macromolecule/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/09/Introduction-to-Food-Macromolecule-1-1-169x88.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/09/Introduction-to-Food-Macromolecule-1-1-169x88.jpg" alt="Introduction to Food Macromolecules " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/09/Introduction-to-Food-Macromolecule-1-1-169x88.jpg" alt="Introduction to Food Macromolecules " /&gt;</noscript></div><div class="md-simulation-title">Introduction to Food Macromolecules</div></div></div> </a><a href="https://www.labster.com/simulations/crime-scene-investigation/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/CSI-3-1-139x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/CSI-3-1-139x90.jpg" alt="Crime Scene Investigation " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/CSI-3-1-139x90.jpg" alt="Crime Scene Investigation " /&gt;</noscript></div><div class="md-simulation-title">Crime Scene Investigation</div></div></div> </a><a href="https://www.labster.com/simulations/mitosis/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.54.23-1-144x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.54.23-1-144x90.jpg" alt="Mitosis " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.54.23-1-144x90.jpg" alt="Mitosis " /&gt;</noscript></div><div class="md-simulation-title">Mitosis</div></div></div> </a><a href="https://www.labster.com/simulations/pasteurization-and-sterilization/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/05/PAS_1-160x90.png" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/05/PAS_1-160x90.png" alt="Pasteurization and Sterilization " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/05/PAS_1-160x90.png" alt="Pasteurization and Sterilization " /&gt;</noscript></div><div class="md-simulation-title">Pasteurization and Sterilization</div></div></div> </a></div></div></div><div class="et_pb_code et_pb_module md-random-simulations et_pb_code_2"><div class="et_pb_code_inner"><div id="md-simulation-overview"><a href="https://www.labster.com/simulations/wastewater-treatment/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/06/WWT_4-160x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/06/WWT_4-160x90.jpg" alt="Wastewater Treatment " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/06/WWT_4-160x90.jpg" alt="Wastewater Treatment " /&gt;</noscript></div><div class="md-simulation-title">Wastewater Treatment</div></div></div> </a><a href="https://www.labster.com/simulations/hplc/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/HPLC-1-1-139x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/HPLC-1-1-139x90.jpg" alt="HPLC " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/HPLC-1-1-139x90.jpg" alt="HPLC " /&gt;</noscript></div><div class="md-simulation-title">HPLC</div></div></div> </a><a href="https://www.labster.com/simulations/crime-scene-investigation/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/CSI-3-1-139x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/CSI-3-1-139x90.jpg" alt="Crime Scene Investigation " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/CSI-3-1-139x90.jpg" alt="Crime Scene Investigation " /&gt;</noscript></div><div class="md-simulation-title">Crime Scene Investigation</div></div></div> </a><a href="https://www.labster.com/simulations/eutrophication/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.19.19-1-169x84.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.19.19-1-169x84.jpg" alt="Eutrophication " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-16-at-14.19.19-1-169x84.jpg" alt="Eutrophication " /&gt;</noscript></div><div class="md-simulation-title">Eutrophication</div></div></div> </a><a href="https://www.labster.com/simulations/pasteurization-and-sterilization/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2017/05/PAS_1-160x90.png" data-lazy-src=" https://www.labster.com/wp-content/uploads/2017/05/PAS_1-160x90.png" alt="Pasteurization and Sterilization " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2017/05/PAS_1-160x90.png" alt="Pasteurization and Sterilization " /&gt;</noscript></div><div class="md-simulation-title">Pasteurization and Sterilization</div></div></div> </a><a href="https://www.labster.com/simulations/cell-culture-basics/ "><div class="md-simulation-card"><div class="md-first-image"><div class="md-image-overlay"> <img src=" https://www.labster.com/wp-content/uploads/2016/06/CCL4-1-144x90.jpg" data-lazy-src=" https://www.labster.com/wp-content/uploads/2016/06/CCL4-1-144x90.jpg" alt="Cell Culture Basics " class="lazyloaded" data-was-processed="true"><noscript>&lt;img src=" https://www.labster.com/wp-content/uploads/2016/06/CCL4-1-144x90.jpg" alt="Cell Culture Basics " /&gt;</noscript></div><div class="md-simulation-title">Cell Culture Basics</div></div></div> </a></div></div></div><div class="et_pb_button_module_wrapper et_pb_module et_pb_button_alignment_center"> <a class="et_pb_button et_pb_custom_button_icon  et_pb_button_2 et_pb_module et_pb_bg_layout_light" href="https://www.labster.com/simulations/" data-icon="E">View All Simulations</a></div></div></div></div>
   </div>
   
-  <!-- Designers -->
+  <!-- How does it work? -->
   <div class="w3-container" id="designers" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>How does it work?.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>The best team in the world.</p>
     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
