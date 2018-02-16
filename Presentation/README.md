@@ -8,19 +8,11 @@ Laboratory Simulations for Educators to Empower their STEM Students.
 
 LABSTER is a simulation platform that allow students to perform scientific experiments using a browser or a VR headset. Students can now perform advanced experiments to achieve core science learning outcomes outlined within their classes. They can explore many different science topics at their own pace and level of difficulty.
 
-```
-Give examples
-```
+### Where is it used? What are best suited applications?
 
-### Installing
+It used in several higher education institutions to supplement STEM related courses. It allows students to perform experiments which complement the theory that they have in class. 
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
+![alt text](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/logo.png)
 
 And repeat
 
