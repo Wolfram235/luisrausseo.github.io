@@ -14,17 +14,11 @@ It used in several higher education institutions to supplement STEM related cour
 
 ![alt text](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/logo.png)
 
-And repeat
+### The basics: How does it work?
 
-```
-until finished
-```
+Basically, is just a simulation that can be run in any computer/smartphone with or without a VR headset. Students can access a shared virtual space in which can perform different experiments related to the class that they are taking. 
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
+![alt text](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/demo.mp4)
 
 ### Break down into end to end tests
 
