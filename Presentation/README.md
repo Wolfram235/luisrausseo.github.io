@@ -31,7 +31,7 @@ Benefits:
 * Has LMS integration (i.e. Blackboard).
 * Can be used in computers, smartphones with or without a VR headset.
 
-Weaknesses:
+#### Weaknesses:
 
 *Limited to what programmers set up as the experiment's outcome.
 *No haptic feedback, which can be solved by using devices such as the Glove One.
