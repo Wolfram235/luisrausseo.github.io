@@ -24,7 +24,7 @@ LABSTER uses VR technology to create an immersive environment in which students 
 
 ### Critique on strengths and weaknesses/issues such as testing flaws or technical flaws. Is there still more to do?
 
-Benefits:
+#### Benefits:
 
 * It allows to perform experiments without the risks.
 * Enables universities to save money by not using reactives or disposal methods.
@@ -38,37 +38,30 @@ Benefits:
 
 ![LABSTER U](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/glove_one.jpg)
 
-## Deployment
+### Can this lead to varying degrees of simulator sickness including nausea, fatigue, headache, eyestrain, vertigo, and dizziness? What is your rating on the scale from 0 to 10?
 
-Add additional notes about how to deploy this on a live system
+It is estimated that a value of 2 out of 10 for this technology. Even though is not a rapid movement simulation, the long sessions required to complete a experiment may be too much for certain people to handle. 
 
-## Built With
+### What are the similar/related applications?
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Similar applications could be: OSSO VR, NVIDIA HoloDeck or ENGAGE. These platforms are also simulations dedicated to collaborative research and learning training. 
 
-## Contributing
+* [OSSO VR](http://ossovr.com/)
+* [NVIDIA Holodeck](https://www.nvidia.com/en-us/design-visualization/technologies/holodeck/)
+* [ENGAGE VR](http://immersivevreducation.com/engage-education-platform/)
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+### Are there any other potential applications of the technique/device?
 
-## Versioning
+Other potential applications could include a collaborative research platform or having the ability to test experiments outside the ‘programmed-only one outcome’ environment. 
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Conclusion
 
-## Authors
+* It is a great tool to educate students regarding STEM related experiments since allow dynamic interaction without the hazards.
+* Can be implemented in current universities’ programs to provide a more comprehensive approach on science as an affordable solution.
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+## References
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
+* [LABSTER] (https://www.labster.com/) - https://www.labster.com/
+* [Slide 1 Background] (https://www.youtube.com/watch?v=IBDDEDEWN88) - 'Labster intro video' - Source: YouTube; By: Labster
+* [How it works video] (https://www.youtube.com/watch?v=IYpovgka-9Q&t=449s) - 'Reimagining education | Michael Bodekaer | TEDxCERN' - Source: YouTube; By: TEDx Talks
+* [Presentation] (https://luisrausseo.github.io/Presentation/index.html)
