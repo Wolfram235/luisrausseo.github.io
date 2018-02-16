@@ -4,9 +4,9 @@
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### What is LABSTER?
 
-What things you need to install the software and how to install them
+LABSTER is a simulation platform that allow students to perform scientific experiments using a browser or a VR headset. Students can now perform advanced experiments to achieve core science learning outcomes outlined within their classes. They can explore many different science topics at their own pace and level of difficulty.
 
 ```
 Give examples
