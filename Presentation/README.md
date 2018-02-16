@@ -12,29 +12,31 @@ LABSTER is a simulation platform that allow students to perform scientific exper
 
 It used in several higher education institutions to supplement STEM related courses. It allows students to perform experiments which complement the theory that they have in class. 
 
-![alt text](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/logo.png)
+![LABSTER U](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/logo.png)
 
 ### The basics: How does it work?
 
 Basically, is just a simulation that can be run in any computer/smartphone with or without a VR headset. Students can access a shared virtual space in which can perform different experiments related to the class that they are taking. 
 
-[![Watch the video](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/demo.mp4)
+### Why is it a good use of VR? Why is it unique? What’s cool about it?
 
-### Break down into end to end tests
+LABSTER uses VR technology to create an immersive environment in which students can feel certain degree of reality in the experiments. LABSTER go a few steps beyond allowing its users to participate in a dynamic learning experience by simulating things like molecule interactions. These experiences allow students to take a more visual and comprehensive approach on the experiments that there are doing. 
 
-Explain what these tests test and why
+### Critique on strengths and weaknesses/issues such as testing flaws or technical flaws. Is there still more to do?
 
-```
-Give an example
-```
+Benefits:
 
-### And coding style tests
+* It allows to perform experiments without the risks.
+* Enables universities to save money by not using reactives or disposal methods.
+* Has LMS integration (i.e. Blackboard).
+* Can be used in computers, smartphones with or without a VR headset.
 
-Explain what these tests test and why
+Weaknesses:
 
-```
-Give an example
-```
+*Limited to what programmers set up as the experiment's outcome.
+*No haptic feedback, which can be solved by using devices such as the Glove One.
+
+![LABSTER U](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/glove_one.jpg)
 
 ## Deployment
 
