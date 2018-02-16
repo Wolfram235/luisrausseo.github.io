@@ -18,7 +18,7 @@ It used in several higher education institutions to supplement STEM related cour
 
 Basically, is just a simulation that can be run in any computer/smartphone with or without a VR headset. Students can access a shared virtual space in which can perform different experiments related to the class that they are taking. 
 
-![alt text](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/demo.mp4)
+[![Watch the video](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/demo.mp4)
 
 ### Break down into end to end tests
 
