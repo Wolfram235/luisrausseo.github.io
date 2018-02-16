@@ -61,7 +61,7 @@ Other potential applications could include a collaborative research platform or 
 
 ## References
 
-* [LABSTER](https://www.labster.com/) - https://www.labster.com/
+* [LABSTER Website](https://www.labster.com/)
 * [Slide 1 Background](https://www.youtube.com/watch?v=IBDDEDEWN88) - 'Labster intro video' - Source: YouTube; By: Labster
 * [How it works video](https://www.youtube.com/watch?v=IYpovgka-9Q&t=449s) - 'Reimagining education | Michael Bodekaer | TEDxCERN' - Source: YouTube; By: TEDx Talks
 * [Presentation](https://luisrausseo.github.io/Presentation/index.html)
