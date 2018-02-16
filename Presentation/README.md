@@ -1,8 +1,8 @@
-# Student Choice Presentation
+# CS 4331 - Student Choice Presentation
 
 ## LABSTER
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Laboratory Simulations for Educators to Empower their STEM Students.
 
 ### What is LABSTER?
 
