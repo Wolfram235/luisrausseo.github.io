@@ -11,10 +11,6 @@
         <a-asset-item id="billiards-mtl" src="assets/models/billiard_table.mtl"></a-asset-item>
         <a-asset-item id="pTable-obj" src="assets/models/pTable.obj"></a-asset-item>
         <a-asset-item id="pTable-mtl" src="assets/models/pTable.mtl"></a-asset-item>
-        <a-asset-item id="car-obj" src="assets/models/car.obj"></a-asset-item>
-        <a-asset-item id="car-mtl" src="assets/models/car.mtl"></a-asset-item>
-        <a-asset-item id="Kitchen-obj" src="assets/models/Kitchen.obj"></a-asset-item>
-        <a-asset-item id="Kitchen-mtl" src="assets/models/Kitchen.mtl"></a-asset-item>
         <a-asset-item id="shower-obj" src="assets/models/shower.obj"></a-asset-item>
         <a-asset-item id="shower-mtl" src="assets/models/shower.mtl"></a-asset-item>
         <a-asset-item id="door-obj" src="assets/models/door.obj"></a-asset-item>
@@ -30,15 +26,16 @@
         <a-asset-item id="bed" src="assets/models/bed/model.dae"></a-asset-item>
         <a-asset-item id="desk" src="assets/models/desk/model.dae"></a-asset-item>
         <a-asset-item id="air" src="assets/models/air/model.dae"></a-asset-item>
-        <a-asset-item id="shelf_room" src="assets/models/shelf_room/model.dae"></a-asset-item>
         <a-asset-item id="garage_door" src="assets/models/garage_door/model.dae"></a-asset-item>
         <a-asset-item id="main_door" src="assets/models/main_door/model.dae"></a-asset-item>
+        <a-asset-item id="kitchen" src="assets/models/kitchen/model.dae"></a-asset-item>
+        <a-asset-item id="sofa" src="assets/models/living_room/model.dae"></a-asset-item>
+        <a-asset-item id="car" src="assets/models/car/model.dae"></a-asset-item>
     </a-assets>
     <!-- Models -->
     <a-entity obj-model="obj: #billiards-obj; mtl: #billiards-mtl" position="-8 1 6.5" rotation="0 90 0"></a-entity>
     <a-entity obj-model="obj: #pTable-obj; mtl: #pTable-mtl" scale = "0.5 0.5 0.5" position="9 0.6 10" rotation="0 0 0"></a-entity>
-    <a-entity obj-model="obj: #car-obj; mtl: #car-mtl" scale = "7 7 7" position="2.2 0.76 4" rotation="4 66 0"></a-entity>
-    <a-entity obj-model="obj: #Kitchen-obj; mtl: #Kitchen-mtl" scale = "0.6 0.6 0.6" position="-9.9 1.3 -6.85" rotation="0 -90 0"></a-entity>
+    <a-entity collada-model="#car" scale = "13 13 13" position="2 1.14 1" rotation="0 0 0"></a-entity>
     <a-entity obj-model="obj: #shower-obj; mtl: #shower-mtl" scale = "1 1 1" position="4.3 1.2 -7.4" rotation="0 90 0"></a-entity>
     <a-entity obj-model="obj: #door-obj; mtl: #door-mtl" scale = "1.7 2.2 1.5" position="-1.4 1.6 2.5" rotation="0 90 0"></a-entity>
     <a-entity obj-model="obj: #bath_sink-obj; mtl: #bath_sink-mtl" scale = "0.6 0.4 0.6" position="-0.4 1.2 -7.7" rotation="0 162 0"></a-entity>
@@ -49,8 +46,9 @@
     <a-entity collada-model="#bed" rotation="0 270 0" position="1 0.2 -6.4" scale="1.3 1.3 1.4"></a-entity>
     <a-entity collada-model="#desk" rotation="0 180 0" position="1.6 0.2 -1.1" scale="1 1 1"></a-entity>
     <a-entity collada-model="#air" rotation="0 0 0" position="3 3 -4.9" scale="1.8 1.3 1"></a-entity>
-    <a-entity collada-model="#shelf_room" rotation="0 90 0" position="-1.1 0.2 -0.55" scale="1.2 1.2 1.2"></a-entity>
     <a-entity collada-model="#main_door" rotation="0 0 0" position="-4.5 0.16 7.1" scale="1.2 1.25 1.2"></a-entity>
+    <a-entity collada-model="#kitchen" rotation="0 0 0" position="-10.3 0.1 -2.9" scale="1.1 1.1 1.1"></a-entity>
+    <a-entity collada-model="#sofa" rotation="0 0 0" position="-10.4 0.1 3.3" scale="1.3 1.3 1.3"></a-entity>
     <!-- Grass -->
     <a-entity id="floor" geometry="height:0.2;depth:24;width:28" position="-1 0 0"
               material="src:url(images/grasslight-big.jpg);color:#fafafa;metalness:0.1;repeat:50 20;roughness:1">
@@ -70,6 +68,17 @@
     <a-entity geometry="height:0.1;depth:5.5;width:7" position="2 0.1 -2.2"
               material="src:url(images/bath_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 2;roughness:1">
     </a-entity>
+    <!-- Living Room Floor -->
+    <a-entity geometry="height: 0.1; depth: 15; width: 4" position="-3.5 0.06 -0.6"
+              material="src:url(images/wood_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 6;roughness:1">
+    </a-entity>
+    <a-entity geometry="height: 0.1; depth: 11.6; width: 5" position="-8 0.06 3.1"
+              material="src:url(images/wood_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 4;roughness:1">
+    </a-entity>
+    <!-- Kitchen Floor -->
+    <a-entity geometry="height: 0.1; depth: 5.3; width: 5" position="-8 0.06 -5.35"
+              material="src:url(images/bFloor.jpg);color:#fafafa;metalness:0.1;repeat:4 4;roughness:1">
+    </a-entity>
 
     <!-- Environment: Forest -->
     <a-entity environment="active: true; seed: 1; skyType: atmosphere;
@@ -85,8 +94,8 @@
     <a-sky radius="200" geometry="" theta-length="110" material="sunPosition:-0.756 0.555 -0.347;shader:skyshader;npot:false"></a-sky>
     <!-- Camera -->
     <a-entity id="cameraWrapper" position="-0.237 1.469 11.354">
-        <a-entity camera universal-controls>
-        <!a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
+        <!a-entity camera universal-controls>
+        <a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
             <a-entity id="cursor" position="0 0 -2" geometry="primitive:ring;radiusOuter:0.016;radiusInner:0.01"
                       material="color:#ff9;shader:flat;transparent:true;opacity:0.5" scale="2 2 2" raycaster=""></a-entity>
         </a-entity>
@@ -146,11 +155,48 @@
               position="-10.4 1.875 -2" rotation="0 90 0" material="shader: standard;
               roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
     </a-entity>
-
-    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 16"
-              position="-2.5 1.875 -8.1" rotation="0 0 0" material="shader: standard;
+    <!-- Back Wall -->
+    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 7.2"
+              position="2 1.875 -8.1" rotation="0 0 0" material="shader: standard;
               roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
     </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 4.5"
+              position="-8.25 1.875 -8.1" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
+    </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 1"
+              position="-2.1 1.875 -8.1" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
+    </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 1; width: 6"
+              position="-3 0.6 -8.1" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
+    </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 0.2; height: 1; width: 6"
+              position="-3 3.25 -8.1" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
+    </a-entity>
+    <!-- Kitchen Ceiling -->
+    <a-entity static-body geometry="primitive: box; depth: 5.3; height: 0.7; width: 3.8"
+              position="-8.4 3.35 -5.35" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
+    </a-entity>
+    <!-- Pseudo-Roof -->
+    <a-entity static-body geometry="primitive: box; depth: 17; height: 0.1; width: 5"
+              position="-7.9 3.75 0.5" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
+    </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 15; height: 0.1; width: 10.9"
+              position="0.05 3.75 -0.5" rotation="0 0 0" material="shader: standard;
+              roughness: 1; src: url(images/bWall.jpg); repeat: 1 4">
+    </a-entity>
+    <!-- Glass -->
+    <a-entity static-body geometry="primitive: box; depth: 0.01; height: 1.8; width: 3.4"
+              position="-4.3 2 -8.13" rotation="0 0 0" material="shader: standard;
+              roughness: 1; transparent: true; opacity: 0.5; color: #8eafe5">
+    </a-entity>
+
+    <!-- Unknown -->
     <a-entity static-body geometry="primitive: box; depth: 0.2; height: 3.75; width: 9.5"
               position="5.6 1.875 -3.5" rotation="0 90 0" material="shader: standard;
               roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
@@ -215,10 +261,17 @@
               position="-1.49 3.25 -4.2" rotation="0 90 0" material="shader: standard;
               roughness: 1; src: url(images/white_wall.jpg); repeat: 1 4">
     </a-entity>
+
+    <!-- Art -->
     <a-entity static-body geometry="primitive: box; depth: 0.05; height: 1.3; width: 3"
-              position="5 2.6 -2.1" rotation="0 90 0" material="shader: standard;
+              position="5.4 2.6 -2.1" rotation="0 90 0" material="shader: standard;
               roughness: 1; src: url(images/paris.jpg); repeat: 1 1">
     </a-entity>
+    <a-entity static-body geometry="primitive: box; depth: 0.05; height: 2; width: 3"
+              position="-10.3 2.3 0.55" rotation="0 90 0" material="shader: standard;
+              roughness: 1; src: url(images/batman_art.jpg); repeat: 1 1">
+    </a-entity>
+
     <!-- Dummy Wall-->
     <a-entity static-body geometry="primitive: box; depth: 0.5; height: 3; width: 2"
               position="-30 20 30" rotation="0 0 0" material="shader: standard;
