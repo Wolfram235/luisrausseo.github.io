@@ -33,8 +33,8 @@ LABSTER uses VR technology to create an immersive environment in which students 
 
 #### Weaknesses:
 
-*Limited to what programmers set up as the experiment's outcome.
-*No haptic feedback, which can be solved by using devices such as the Glove One.
+* Limited to what programmers set up as the experiment's outcome.
+* No haptic feedback, which can be solved by using devices such as the Glove One.
 
 ![LABSTER U](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Presentation/assets/glove_one.jpg)
 
@@ -61,7 +61,7 @@ Other potential applications could include a collaborative research platform or 
 
 ## References
 
-* [LABSTER] (https://www.labster.com/) - https://www.labster.com/
-* [Slide 1 Background] (https://www.youtube.com/watch?v=IBDDEDEWN88) - 'Labster intro video' - Source: YouTube; By: Labster
-* [How it works video] (https://www.youtube.com/watch?v=IYpovgka-9Q&t=449s) - 'Reimagining education | Michael Bodekaer | TEDxCERN' - Source: YouTube; By: TEDx Talks
-* [Presentation] (https://luisrausseo.github.io/Presentation/index.html)
+* [LABSTER](https://www.labster.com/) - https://www.labster.com/
+* [Slide 1 Background](https://www.youtube.com/watch?v=IBDDEDEWN88) - 'Labster intro video' - Source: YouTube; By: Labster
+* [How it works video](https://www.youtube.com/watch?v=IYpovgka-9Q&t=449s) - 'Reimagining education | Michael Bodekaer | TEDxCERN' - Source: YouTube; By: TEDx Talks
+* [Presentation](https://luisrausseo.github.io/Presentation/index.html)
