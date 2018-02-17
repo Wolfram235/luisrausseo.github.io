@@ -5,6 +5,22 @@
     <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
 </head>
 <body>
+<script>
+    AFRAME.registerComponent('scale-on-click', {
+        schema: {
+            to: {default: '2.5 2.5 2.5'}
+        },
+
+        init: function () {
+            var sun = document.getElementById('enviro');
+            var str1 = "active: true; seed: 1; skyType: atmosphere; lighting: none; lightPosition: -1 ";
+            var str2 = " 0; fog: 0.1; ground: noise; groundYScale: 4.18 groundTexture: squares; groundColor: #937a24; groundColor2: #987d2e; dressing: trees; dressingAmount: 200; dressingColor: #888b1d; dressingScale: 5; dressingVariance: [object Object]; gridColor: #c5a543; preset: forest";
+            this.el.addEventListener('click', function () {
+                sun.setAttribute('environment', str1 + "0" + str2);
+        }
+    });
+</script>
+
 <a-scene>
     <a-assets>
         <a-asset-item id="billiards-obj" src="assets/models/billiard_table.obj"></a-asset-item>
@@ -32,6 +48,7 @@
         <a-asset-item id="sofa" src="assets/models/living_room/model.dae"></a-asset-item>
         <a-asset-item id="car" src="assets/models/car/model.dae"></a-asset-item>
     </a-assets>
+
     <!-- Models -->
     <a-entity obj-model="obj: #billiards-obj; mtl: #billiards-mtl" position="-8 1 6.5" rotation="0 90 0"></a-entity>
     <a-entity obj-model="obj: #pTable-obj; mtl: #pTable-mtl" scale = "0.5 0.5 0.5" position="9 0.6 10" rotation="0 0 0"></a-entity>
@@ -49,40 +66,52 @@
     <a-entity collada-model="#main_door" rotation="0 0 0" position="-4.5 0.16 7.1" scale="1.2 1.25 1.2"></a-entity>
     <a-entity collada-model="#kitchen" rotation="0 0 0" position="-10.3 0.1 -2.9" scale="1.1 1.1 1.1"></a-entity>
     <a-entity collada-model="#sofa" rotation="0 0 0" position="-10.4 0.1 3.3" scale="1.3 1.3 1.3"></a-entity>
-    <!-- Grass -->
-    <a-entity id="floor" geometry="height:0.2;depth:24;width:28" position="-1 0 0"
-              material="src:url(images/grasslight-big.jpg);color:#fafafa;metalness:0.1;repeat:50 20;roughness:1">
-    </a-entity>
-    <!-- Garage Floor -->
-    <a-entity geometry="height:0.4;depth:6.3;width:7" position="2 0 3.8"
-              material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 3;roughness:1">
-    </a-entity>
-    <a-entity geometry="height:0.4;depth:5;width:4" position="2 0 9.45"
-              material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 2;roughness:1">
-    </a-entity>
-    <!-- Bath Floor -->
-    <a-entity geometry="height:0.1;depth:3;width:7" position="2 0.1 -6.5"
-              material="src:url(images/bath_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 1;roughness:1">
-    </a-entity>
-    <!-- Room Floor -->
-    <a-entity geometry="height:0.1;depth:5.5;width:7" position="2 0.1 -2.2"
-              material="src:url(images/bath_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 2;roughness:1">
-    </a-entity>
-    <!-- Living Room Floor -->
-    <a-entity geometry="height: 0.1; depth: 15; width: 4" position="-3.5 0.06 -0.6"
-              material="src:url(images/wood_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 6;roughness:1">
-    </a-entity>
-    <a-entity geometry="height: 0.1; depth: 11.6; width: 5" position="-8 0.06 3.1"
-              material="src:url(images/wood_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 4;roughness:1">
-    </a-entity>
-    <!-- Kitchen Floor -->
-    <a-entity geometry="height: 0.1; depth: 5.3; width: 5" position="-8 0.06 -5.35"
-              material="src:url(images/bFloor.jpg);color:#fafafa;metalness:0.1;repeat:4 4;roughness:1">
+
+    <!-- Floor -->
+    <a-entity id="floor">
+        <!-- Grass -->
+        <a-entity id="floor" geometry="height:0.2;depth:24;width:28" position="-1 0 0"
+                  material="src:url(images/grasslight-big.jpg);color:#fafafa;metalness:0.1;repeat:50 20;roughness:1">
+        </a-entity>
+
+        <!-- Garage Floor -->
+        <a-entity geometry="height:0.4;depth:6.3;width:7" position="2 0 3.8"
+                  material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 3;roughness:1">
+        </a-entity>
+        <a-entity geometry="height:0.4;depth:5;width:4" position="2 0 9.45"
+                  material="src:url(images/garage_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 2;roughness:1">
+        </a-entity>
+
+        <!-- Bath Floor -->
+        <a-entity geometry="height:0.1;depth:3;width:7" position="2 0.1 -6.5"
+                  material="src:url(images/bath_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 1;roughness:1">
+        </a-entity>
+
+        <!-- Room Floor -->
+        <a-entity geometry="height:0.1;depth:5.5;width:7" position="2 0.1 -2.2"
+                  material="src:url(images/bath_floor.jpg);color:#fafafa;metalness:0.1;repeat:1 2;roughness:1">
+        </a-entity>
+
+        <!-- Living Room Floor -->
+        <a-entity geometry="height: 0.1; depth: 15; width: 4" position="-3.5 0.06 -0.6"
+                  material="src:url(images/wood_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 6;roughness:1">
+        </a-entity>
+        <a-entity geometry="height: 0.1; depth: 11.6; width: 5" position="-8 0.06 3.1"
+                  material="src:url(images/wood_floor.jpg);color:#fafafa;metalness:0.1;repeat:3 4;roughness:1">
+        </a-entity>
+
+        <!-- Kitchen Floor -->
+        <a-entity geometry="height: 0.1; depth: 5.3; width: 5" position="-8 0.06 -5.35"
+                  material="src:url(images/bFloor.jpg);color:#fafafa;metalness:0.1;repeat:4 4;roughness:1">
+        </a-entity>
     </a-entity>
 
+    <!-- Nite Nite Box -->
+    <a-entity geometry="height: 1; depth: 1; width: 1" position="1 1 10"  scale="0.5 0.5 0.5" scale-on-click="to: -1 0 0"></a-entity>
+
     <!-- Environment: Forest -->
-    <a-entity environment="active: true; seed: 1; skyType: atmosphere;
-                           lighting: none; lightPosition: -1.2 0.88 -0.55; fog: 0.1;
+    <a-entity id="enviro" environment="active: true; seed: 1; skyType: atmosphere;
+                           lighting: none; lightPosition: -1 1 0; fog: 0.1;
                            ground: noise; groundYScale: 4.18;
                            groundTexture: squares; groundColor: #937a24; groundColor2: #987d2e;
                            dressing: trees; dressingAmount: 200; dressingColor: #888b1d; dressingScale: 5; dressingVariance: [object Object];
@@ -90,15 +119,15 @@
                            preset: forest">
         <a-entity position="9.698 7.19 19.878" light="intensity:0.477;angle:62.14;shadowCameraLeft:-10;shadowCameraBottom:-10;shadowCameraRight:10;shadowCameraTop:10" rotation="-0.17188733853924698 43.37290509140332 167.3036761782004"></a-entity>
     </a-entity>
-    <!-- Sky -->
-    <a-sky radius="200" geometry="" theta-length="110" material="sunPosition:-0.756 0.555 -0.347;shader:skyshader;npot:false"></a-sky>
+
     <!-- Camera -->
     <a-entity id="cameraWrapper" position="-0.237 1.469 11.354">
-        <!a-entity camera universal-controls>
-        <a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
-            <a-entity id="cursor" position="0 0 -2" geometry="primitive:ring;radiusOuter:0.016;radiusInner:0.01"
-                      material="color:#ff9;shader:flat;transparent:true;opacity:0.5" scale="2 2 2" raycaster=""></a-entity>
+        <a-entity camera universal-controls>
+        <!a-entity id="camera" camera="" look-controls="" wasd-controls="" data-aframe-inspector-original-camera="">
+            <a-cursor position="0 0 -2" geometry="primitive:ring;radiusOuter:0.008;radiusInner:0.005"
+                material="color:#ff9;shader:flat;transparent:true;opacity:0.5" scale="2 2 2" raycaster=""></a-cursor>
         </a-entity>
+    </a-entity>
 
     </a-entity>
     <!-- Walls (Front)-->
