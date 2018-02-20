@@ -10,7 +10,7 @@
 
 The sun changes position when the Nite Nite box in clicked. It changes the y-coordinate from 0 to 1.1 in 0.1 steps. 
 
-![Nite Nite box gif]()
+![Nite Nite box gif](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Project_1/assets/readme/nite_nite_box.gif)
 
 ```
 AFRAME.registerComponent('nite-nite', {
@@ -49,7 +49,7 @@ AFRAME.registerComponent('nite-nite', {
 
 The garage door opens/closed when clicked. This is done by changing position and rotation at the same time.
 
-![Garage door gif]()
+![Garage door gif](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Project_1/assets/readme/garage_door.gif)
 
 ```
 <a-entity id="garage_door" class="clickable" static-body geometry="primitive: box; depth: 0.1; height: 3; width: 4"
@@ -64,7 +64,7 @@ The garage door opens/closed when clicked. This is done by changing position and
 
 The earth is a giant Collada model which rotates in its own axis by a <a-animation> element. 
 
-![Rotating earth]()
+![Rotating earth](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Project_1/assets/readme/earth.gif)
 
 ```
 <a-entity collada-model="#planet" rotation="45 0 45" position="70 150 -100" scale="80 80 80">
