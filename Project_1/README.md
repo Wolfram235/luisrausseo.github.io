@@ -62,7 +62,7 @@ The garage door opens/closed when clicked. This is done by changing position and
 
 #### Earth
 
-The earth is a giant Collada model which rotates in its own axis by a <a-animation> element. 
+The earth is a giant Collada model which rotates in its own axis by an a-frame animation element. 
 
 ![Rotating earth](https://github.com/luisrausseo/luisrausseo.github.io/blob/master/Project_1/assets/readme/earth.gif)
 
@@ -98,22 +98,20 @@ The earth is a giant Collada model which rotates in its own axis by a <a-animati
 ### Textures
 
 * Wood Floor 1 - http://www.thinkstockphotos.com/image/stock-photo-seamless-wood-floor-texture-hardwood-floor/645858422
-
-* Wood Floor 2 - 
-
 * Kitchen Floor - http://www.damarals.com/21783/floor/best-vinyl-flooring-black-ecostep-black-slate-tile-589-cushioned-vinyl-flooring-factory/
-
 * Black Wood - http://wpliving.net/70-free-seamless-wood-backgrounds-2017/
-
 * Garage Door - http://www.precisiondoorstl.com/doors_wd9600.asp
-
 * Outdoor floor - https://www.sketchuptextureclub.com/textures/architecture/paving-outdoor/concrete/blocks-mixed/concrete-paving-outdoor-texture-seamless-20557
-
 * White Wall - https://www.flickr.com/photos/chaoslotus/3271031590
 
 ### Art
 
-* Batman - http://snappypixels.com/wp-content/uploads/2014/01/smithbatman.jpg
+* Batman Splash Art - http://snappypixels.com/wp-content/uploads/2014/01/smithbatman.jpg
+* Paris Umbrella - https://esmehome.files.wordpress.com/2012/09/406685.jpg
 
-* Paris - https://esmehome.files.wordpress.com/2012/09/406685.jpg
+## References
 
+* [A-frame](https://aframe.io/)
+* [3D Warehouse](https://3dwarehouse.sketchup.com/)
+* [Google Poly](https://poly.google.com/)
+* [CS 4331 - Project 1 Demo](https://alex-nguyen.github.io/CS5331001-Virtual-Reality/index.html)
