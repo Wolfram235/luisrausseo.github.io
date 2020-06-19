@@ -23,11 +23,22 @@
   font-size: 60px;
   margin-top: 0px;
 }
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
 		</style>
 	</head>
 	
-	<!-- Display the countdown timer in an element -->
-<p id="demo"></p>
 
 <script>
 // Set the date we're counting down to
@@ -61,25 +72,34 @@ var x = setInterval(function() {
 </script>
 
 	<body class="w3-light-grey">
-
 		<!-- Page Container -->
-		<div class="w3-content w3-margin-top" style="max-width:1400px;">
+		<div id='mainContent' class="w3-content w3-margin-top" style="max-width:1400px;">
 
-			
-						<!-- Picture -->
-						<div class="w3-display-container">
-							<img src="assets/photo.jpg" style="width:100%" alt="Avatar">
-						</div>
-						
-						
+			<!-- Display the countdown timer in an element -->
+			<p id="demo"></p>
 
+			<!-- Picture -->
+			<div class="w3-display-container">
+				<img src="assets/photo.jpg" style="width:100%" alt="Avatar">
+			</div>
 		<!-- End Page Container -->
+		</div>
+		<div id="overlay">
+			<!-- Picture -->
+			<div class="w3-display-container">
+				<h1>No se permiten Chilenos</h1>
+				<img src="assets/joel.jpg" style="width:100%" alt="Avatar">
+			</div>
 		</div>
 	</body>
 	<script>
-	// If your site is on Cloudflare, then you can use '/cdn-cgi/trace' instead
-	$.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-		console.log(data)
-	})
+	$.getJSON('http://www.geoplugin.net/json.gp?jsoncallback=?', function(data) {
+	  var decoded_data = data;
+	  console.log(decoded_data.geoplugin_countryName);
+	  if (decoded_data.geoplugin_countryName == "Chile") {
+		$("#mainContent").css("visibility", "hidden");
+		document.getElementById("overlay").style.display = "block";
+	  }
+	});
 	</script>
 </html>
